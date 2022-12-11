@@ -1,0 +1,184 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+
+header{
+    background-color: #efefef;
+    width:100vw;
+    height: 100%;
+}
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    flex-wrap: wrap;
+}
+
+nav label{
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+}
+nav ul li{
+    margin-right: 10px;
+    padding: 10px;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #002;
+    
+}
+nav ul li a:hover{
+    color:red;
+}
+.hide-me{
+    display: none;
+}
+.hide-me img{
+    width:50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+
+/* container */
+.container{
+    width:80%;
+    margin:0 auto;
+}
+/* news content */
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+.content .sport, .trending{
+    width:30%;
+    height: 50%;
+   
+}
+
+.breaking{
+    width: 39%;
+    /* align-self: center; */
+    height: 100%;
+    
+}
+.breaking .card-body img{
+    height: 100%;
+    width: 100%;
+}
+.card-body:hover{
+    opacity: 0.7;
+}
+
+
+ .card-body{
+    max-width: 100%;
+    box-shadow: 3px 0 7px rgb(167, 162, 162);
+    border-radius: 6px;
+    margin-top: 10px;
+    text-align: center;
+    position: relative;
+    
+}
+.card-body .title{
+    position: absolute;
+    width: 100%;
+    height: calc(5*5);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    background-color: #002;
+    color: #fff;
+    opacity: 0.6;
+    /* white-space: nowrap; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+ .card-body img{
+    max-width:100% ;
+    height: 300px;
+    /* object-fit:cover; */
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: color-burn;
+    mix-blend-mode: color-dodge;
+    border: 1px solid #fff;
+
+
+}
+
+
+@media screen and (max-width:745px){
+    header nav {
+       align-items: baseline;
+       flex-wrap: wrap;
+       position: relative;
+       
+    
+    }
+    .hide-me{
+        display: inline-block;
+    }
+    nav ul{
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-color: rgb(237, 229, 229);
+        width: 100%; 
+      
+    }
+    .show{
+        display: none;
+        transition: 0.5s ease-out;
+        position: absolute;
+        left: -50%;
+      
+    }
+    .content{
+        flex-direction: column;
+
+    }
+    .content .trending, .breaking{
+        width: 100%;
+    }
+    .content .breaking{
+        justify-self: flex-start;
+    }
+    .content .sport{
+        width: 100%;
+    }
+}
+
+/*politics */
+
+.container-poly{
+    background-color: blue;
+    width: 80%;
+    margin: 0 auto;
+}
+.politics h1{
+    text-align: center;
+    margin: 0 auto;
+    justify-content: center;
+    color:red;
+   text-transform: uppercase;
+}
+.content{
+display: flex;
+justify-content: space-between;
+text-align: center;
+}
