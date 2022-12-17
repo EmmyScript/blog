@@ -64,11 +64,19 @@ nav ul li a:hover{
 .content{
     display: flex;
     justify-content: space-between;
+    border-radius: 10px solid yellow;
 }
 .content .sport, .trending{
     width:30%;
     height: 50%;
+    
+    
    
+}
+.trending h2{
+    text-transform: uppercase;
+    text-decoration: underline;
+    opacity: 0.8;
 }
 
 .breaking{
@@ -80,6 +88,7 @@ nav ul li a:hover{
 .breaking .card-body img{
     height: 100%;
     width: 100%;
+    border-radius: 10px red;
 }
 .card-body:hover{
     opacity: 0.7;
@@ -89,7 +98,7 @@ nav ul li a:hover{
  .card-body{
     max-width: 100%;
     box-shadow: 3px 0 7px rgb(167, 162, 162);
-    border-radius: 6px;
+    border-radius: 6px yellow;
     margin-top: 10px;
     text-align: center;
     position: relative;
@@ -117,9 +126,82 @@ nav ul li a:hover{
     background-size: cover;
     background-blend-mode: color-burn;
     mix-blend-mode: color-dodge;
-    border: 1px solid #fff;
+    border: 10px solid white
 
 
+}
+
+/* politics */
+
+
+
+
+
+.title h1{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 auto;
+    
+}
+.contents{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.contents .life, .politics{
+    width: 30%;
+    height: 50%;
+    text-align: center;
+    
+    
+    
+
+}
+ .poly img{
+width: 100%;
+height: 300px;
+background-position: center;
+background-size: cover;
+background-blend-mode:color-burn;
+mix-blend-mode: color-dodge;
+border: 10px solid wheat;
+
+
+}
+.poly{
+    max-width: 100%;
+    box-shadow:rgb(237, 229, 229);
+    border-radius: 9px red;
+    margin-top: 10px;
+    position: relative;
+}
+.poly .title{
+position: absolute;
+width: 100%;
+height: calc(5*5);
+top: 50%;
+left: 50%;
+transform: translate(-50%, 50%);
+background-color: #002;
+color: #fff;
+opacity: 0.5;
+overflow: hidden;
+text-overflow: ellipsis;
+
+}
+.movies{
+    width: 39%;
+    text-align: center;
+    height: 100%;
+    
+}
+.movies .poly img{
+    width: 100%;
+    height: 100%;
+}
+.poly:hover{
+    opacity: 0.8;
 }
 
 
@@ -161,24 +243,134 @@ nav ul li a:hover{
     .content .sport{
         width: 100%;
     }
+
+    .contents{
+        flex-direction: column;
+    }
+    .contents .politics, .movies {
+        width: 100%;
+    }
+    .contents .movies{
+        justify-self: flex-start;
+    }
+    .contents .life{
+        width: 100%;
+    
+    }
+    
+    
+    
+    
 }
 
-/*politics */
+/*form */
 
-.container-poly{
-    background-color: blue;
+.content-form{
+    display: flex;
+    flex-direction: column;
     width: 80%;
-    margin: 0 auto;
-}
-.politics h1{
-    text-align: center;
-    margin: 0 auto;
+    margin: 20px auto;
+    padding-top: 20px;
+text-transform: capitalize;
+ }
+ .input-group{
+    display: flex;
+    width: 100%;
+    align-items: center;
     justify-content: center;
-    color:red;
+    margin-bottom: 5px;
+ }
+ .input-group label{
+    margin-right: 5px;
+    width: 40%;
+ }
+ .input-group input{
+    width:60%;
+    padding: 5px 10px;
+
+ }
+ .input-group input:focus{
+    outline: none;
+    border:rgb(15, 113, 145) 2px solid;
+
+ }
+ .input-group button{
+    padding: 10px 16px;
+ }
+
+  other_name_error 
+ #other_name_error{
+    color:#ad7171;
+    font-size: 16px; 
+ }
+ 
+ 
+
+ input{
+   padding-left: 10px;
+   width: 100%;
+   padding-right: 10px;
+   box-sizing: border-box;
+   margin-bottom: 5px;
+   outline: none;
+ }
+
+ button{
+   background-color: green;
+   color: #fff;
    text-transform: uppercase;
+   font-weight: 1px solid green;
+   border: none;
+   text-align: center;
+   height: 40px;
+   width: 100px;
+
+ }
+  
+/* expand img */
+.column{
+    float: left;
+    width: 25%;
+    padding: 10px;
+
 }
-.content{
-display: flex;
-justify-content: space-between;
-text-align: center;
+.column img{
+    opacity: 0.8;
+    cursor: pointer;
+    width: 50%;
+    height: 30%;
 }
+
+.column img:hover{
+    opacity: 1;
+}
+
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.containers {
+    position: relative;
+    display: none;
+}
+#imgtext{
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+}
+
+.closebtn {
+position: absolute;
+top: 10px;
+right: 15px;
+color: wheat;
+font-size: 35px;
+cursor: pointer;
+}
+
+
+
+ 

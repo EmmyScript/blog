@@ -1,4 +1,4 @@
-l<!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html>
 
 <head>
@@ -17,28 +17,27 @@ l<!DOCTYPE HTML>
             <ul id="menu">
                 <li><a href="/index.html">Home</a></li>
                 <li><a href="/contact.html">Contact us</a></li>
-                <li><a href="/about.html">About us</a></li>
+             <li><a href="/about.html">About us</a></li>
+             <li><a href="/form.html">my form</a></li>
 
             </ul>
         </nav>
     </header>
     <div class="container">
+
         <section class="content" id="content">
             <div class="trending">
-                <h2>Treading news</h2>
+                <h2>trending</h2>
 
                 <a href="/about/about.html">
                     <div class="card-body">
-                        <img src="./images/jerry.jpg" />
-                        <p class="title">New Nigeria is POssible with PO
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis quod id obcaecati nihil
-                            harum praesentium quidem aperiam, excepturi consectetur ea!
-                        </p>
-                    </div>
+                        <img src="./images/tale.jpg" />
+                        </div>
+                        <p>like  a lighthouse AT night, may ur mutua</p>
                 </a>
                 <a href="/about/about.html">
                     <div class="card-body">
-                        <img src="./images/jerry.jpg" />
+                        <img src="./images/tale.jpg" />
                         <p class="title">New Nigeria is POssible with PO
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis quod id obcaecati nihil
                             harum praesentium quidem aperiam, excepturi consectetur ea!
@@ -56,11 +55,12 @@ l<!DOCTYPE HTML>
                 </a>
 
             </div>
+
             <div class="breaking">
                 <h2>Breaking news</h2>
                 <a href="/about/about.html">
                     <div class="card-body">
-                        <img src="./images/maria.jpg" />
+                        <img src="./images/jerry.jpg" />
                         <p class="title">New Nigeria is POssible with PO
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis quod id obcaecati nihil
                             harum praesentium quidem aperiam, excepturi consectetur ea!
@@ -81,14 +81,14 @@ l<!DOCTYPE HTML>
                 </a>
                 <a href="/about/about.html">
                     <div class="card-body">
-                        <img src="./images/jerry.jpg" />
+                        <img src="./images/tal.jpg" />
                         <p class="title">New Nigeria is POssible with PO
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis quod id obcaecati nihil
                             harum praesentium quidem aperiam, excepturi consectetur ea!
                         </p>
                     </div>
                 </a>
-                <a href="/about/about.html">
+                <a href="/contact/contact.html">
                     <div class="card-body">
                         <img src="./images/jerry.jpg" />
                         <p class="title">New Nigeria is POssible with PO
@@ -100,17 +100,157 @@ l<!DOCTYPE HTML>
 
             </div>
         </section>
+        
         <div class="title">
             <h1>politics</h1>
         </div>
-        <section class="contents">
+        <section class="contents" id="content">
             <div class="politics">
-                <h2>politics news</h2>
+                <h4>politics</h4>
+                <div class="poly">
+                    <img src="./images/jerry.jpg">
+                    <p class="title"> peter obi
+                        Lorem, ipsum dolor sit amet
+                        consectetur adipisicing elit.
+                        Saepe, aliquid.
+
+                    </p>
+                </div>
+                <div class="poly">
+                    <img src="./images/jerry.jpg">
+                    <p class="title"> peter obi
+                        Lorem, ipsum dolor sit amet
+                        consectetur adipisicing elit.
+                        Saepe, aliquid.
+
+                    </p>
+                </div>
+                <div class="poly">
+                    <img src="./images/jerry.jpg">
+                    <p class="title"> peter obi
+                        Lorem, ipsum dolor sit amet
+                        consectetur adipisicing elit.
+                        Saepe, aliquid.
+
+                    </p>
+                </div>
             </div>
-            <div class=""
+            <div class="movies">
+                <h3>movies</h3>
+                <a href="/form/form.html">
+                <div class="poly">
+                    <img src="./images/maria.jpg">
+                    <p class="title"> peter Lorem, ipsum dolor sit amet
+                        consectetur adipisicing elit.
+                        Saepe, aliquid.
+
+                    </p>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing 
+                        elit. Temporibus ratione obcaecati rerum in suscipit amet 
+                        illum vero nam soluta commodi!</span>
+                </div>
+                </a>
+            </div>
+            <div class="life">
+
+                <h3>life style</h3>
+                <div class="poly">
+                    <img src="./images/jerry.jpg">
+                    <p class="title"> peter Lorem, ipsum dolor sit amet
+                        consectetur adipisicing elit.
+                        Saepe, aliquid.
+ 
+                    </p>
+                </div>
+                <div class="poly">
+                    <img src="./images/jerry.jpg">
+                    <p class="title"> peter Lorem, ipsum dolor sit amet
+                        consectetur adipisicing elit.
+                        Saepe, aliquid.
+ 
+                    </p>
+                </div>
+                <div class="poly">
+                    <img src="./images/jerry.jpg">
+                    <p class="title"> peter Lorem, ipsum dolor sit amet
+                        consectetur adipisicing elit.
+                        Saepe, aliquid.
+ 
+                    </p>
+                </div>
+            </div>
         </section>
     </div>
 
+        <!--expanding img-->
+        <div class="conntainers">
+            <span 
+            onclick="this.parentElement.style .display='none'"
+            class="closebtn">&times;</span>
+
+            <img id="expandedImg"
+            style="width: 100%">
+            <div class="imgtext"></div>
+        </div>
+    <!--form-->
+    
+    <form class="content-form" onsubmit="submitForm()">
+
+        <div class="input-group">
+          <label>surname</label>
+          <input type="text" name="surname" id="surname" />
+        </div>
+        <span id="sur_name_error"></span>
+        <div class="input-group">
+          <label>firstname</label>
+          <input type="text" name="firstname" id="firstname" />
+        </div>
+        <div class="input-group">
+          <label>othername</label>
+          <input type="text" name="othername" id="othername" />
+  
+        </div>
+        <span id="other_name_error"></span>
+        <div class="input-group">
+          <label>email</label>
+          <input type="email" name="email" id="email" required />
+        </div>
+        <span id="email_error"></span>
+        <div class="input-group">
+          <label>age</label>
+          <input type="number" name="age" value="0" />
+        </div>
+        <div class="input-group">
+          <label>birthday</label>
+          <input type="date" name="birthday" id="birthday" />
+        </div>
+  
+        <div class="input-group">
+          <label>password</label>
+          <input type="password" name="password" id="password" />
+        </div>
+        <div class="input-group">
+          <label>nationality</label>
+          <select input="nationality">
+            <option value="nigerian">nigerian</option>
+            <option value="ghana">ghana</option>
+            <option value="germany">germany</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <input type="radio" name="gender" value="male" id="male" />
+          <label>male</label>
+          <input type="radio" checked name="gender" value="female" id="female" />
+          <label>female</label>
+        </div>
+        <div class="input-group">
+          <button type="submit" id="btnId">submit</button>
+  
+        </div>
+      </form>
+      
+
     <script src="./index.js"></script>
 </body>
+
 </html>
